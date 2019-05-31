@@ -9,10 +9,10 @@ public class Homework2 {
         return year = year / 4 - year / 100 + year / 400;
     }
 
-    final static double fault = 0.0001;
+    final static double FAULT = 0.0001;
 
     public static boolean doubleExpression(double a, double b, double c) {
-        return (Math.abs((a + b) - c) <= fault) ? true : false;
+        return (Math.abs((a + b) - c) <= FAULT) ? true : false;
     }
 
     public static int flipBit(int value, int bitIndex) {
